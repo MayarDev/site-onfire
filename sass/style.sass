@@ -55,8 +55,24 @@ img
       display: flex
       &__item
         margin-right: 48px
+        position: relative
+        &::before
+          content: ""
+          width: 105%
+          height: 1px
+          background-color: #fff
+          position: absolute
+          left: 0
+          bottom: -20px
+          transform: scaleX(0)
+        &:hover::before
+          transform: scaleX(1)
+          transition: transform 0.25s
+          transform-origin: left
         &:last-child
           margin-right: 0
+  a
+    margin-bottom: 8px;
 
 //PROMO
 .promo
