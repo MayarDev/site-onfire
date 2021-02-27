@@ -11,7 +11,6 @@ body
   font-size: 16px 
   font-weight: 400
   color: #000
-  background-color: #000
 h1, h2, h3, h4, h5, h6
   font-weight: 700
 ul, li
@@ -35,7 +34,8 @@ img
   display: block
   background: #FF4975
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25)
-  border-radius: 30px
+  border: none
+  border-radius: 30px;
 // Settings
 
 //HEADER
@@ -90,3 +90,53 @@ img
     margin-bottom: 21px
   .btn
     margin-bottom: 168px
+
+//BUILD
+.build
+  padding: 103px 0 97px 0
+  &-title
+    color: #323232
+    text-shadow: rgba(0, 0, 0, 0.25) 4px 4px;
+    font-size: 36px
+    line-height: 50.4px
+    margin-bottom: 17px
+  .descr
+    line-height: 22.4px
+    color: #000
+    width: 500px
+    height: 41px
+    margin-bottom: 78px
+
+  .wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: space-between
+    margin-bottom: 27px
+    &__item
+      width: 508px
+      display: flex
+      margin-bottom: 51px
+      &:nth-child(even)
+        margin-left: 94px
+      &__img
+        border-radius: 0px 10px 10px 10px
+        width: 210px
+        height: 144px
+      
+      &__text
+        margin-left: 30px
+        width: 54%
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        &__title
+          line-height: 26.6px
+        &__descr
+          font-size: 15px
+          line-height: 21px
+        &__price
+          color: #FF4975;  
+          font-size: 15px;
+          line-height: 21px
+    
