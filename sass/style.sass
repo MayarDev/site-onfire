@@ -106,7 +106,6 @@ img
     width: 500px
     height: 41px
     margin-bottom: 78px
-
   .wrapper
     display: flex
     flex-wrap: wrap
@@ -136,7 +135,58 @@ img
           font-size: 15px
           line-height: 21px
         &__price
-          color: #FF4975;  
-          font-size: 15px;
+          color: #FF4975
+          font-size: 15px
           line-height: 21px
+//PROJECT
+.project
+  padding: 109px 0 205px 0
+  .title
+    font-size: 36px
+    line-height: 50.4px
+    margin-bottom: 17px
+  .descr
+    line-height: 22.4px
+    margin-bottom: 78px
+  .wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 89px
+    &__item
+      width: 345px
+      height: 265px
+      position: relative
+      &__img
+        border-radius: 15px
+        position: absolute
+        z-index: 1
+      &__icon
+        position: absolute
+        z-index: 5
+        left: 50%
+        transform: translateX(-50%)
+        top: 45%
+        display: none
+      &:hover .wrapper__item__icon
+        display: block
+  .line
+    width: 100%
+    border: 1px solid #B8B8B8
+    margin-bottom: 50px
+  .chart
     
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__item
+      text-align: center
+      display: flex
+      height: 70px
+      flex-wrap: wrap
+      flex-direction: column
+      justify-content: space-evenly
+      &__count
+        line-height: 50.4px
+        font-size: 36px
+        font-weight: 700 
+
