@@ -1,4 +1,76 @@
+//Setting
 *
   margin: 0
   padding: 0
   box-sizing: border-box
+.container
+  width: 1110px
+  margin: 0 auto
+body
+  font-family: "Ubuntu", sans-serif
+  font-size: 16px 
+  font-weight: 400
+  color: #000
+  background-color: #000
+h1, h2, h3, h4, h5, h6
+  font-weight: 700
+ul, li
+  display: block
+  font-weight: 400
+p
+  line-height: 22.4px
+a
+  text-decoration: none
+  color: #fff
+img
+  display: block
+  max-width: 100%
+.btn
+  padding: 14px 36px
+  color: #FFFFFF
+  font-size: 15px
+  line-height: 17px
+  text-align: center
+  width: 200px
+  display: block
+  background: #FF4975
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25)
+  border-radius: 30px
+// Settings
+
+//HEADER
+.header
+  padding: 21px 0 23px 0
+  position: absolute
+  width: 100%
+  left: 0
+  top: 0
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .menu
+    margin-bottom: 8px;
+    &-list
+      display: flex
+      &__item
+        margin-right: 48px
+        &:last-child
+          margin-right: 0
+
+//PROMO
+.promo
+  padding: 228px 0 70px 0
+  background: linear-gradient(57.79deg, rgba(51, 5, 111, 0.58) 27.19%, rgba(56, 32, 87, 0.29) 81.02%), url(../img/header_bg.jpg);
+  &-title
+    font-size: 48px
+    color: #fff
+    line-height: 57,6px
+    margin-bottom: 23px
+  &-descr
+    width: 340px
+    height: 68px
+    color: #fff
+    margin-bottom: 21px
+  .btn
+    margin-bottom: 168px
