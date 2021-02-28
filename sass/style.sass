@@ -57,12 +57,12 @@ img
         position: relative
         &::before
           content: ""
-          width: 105%
-          height: 1px
+          width: 100%
+          height: 2px
           background-color: #fff
           position: absolute
           left: 0
-          bottom: -20px
+          bottom: -38px
           transform: scaleX(0)
         &:hover::before
           transform: scaleX(1)
@@ -70,8 +70,13 @@ img
           transform-origin: left
         &:last-child
           margin-right: 0
-  a
-    margin-bottom: 8px;
+  .header-line
+    width: 100%
+    border: solid rgba(255, 255, 255, 0.58)
+    border-width: 1px 0 0 0 
+    position: absolute
+    bottom: 0
+
 
 //PROMO
 .promo
@@ -301,4 +306,19 @@ img
         outline: none
         cursor: pointer
         border: none
+
+@media (max-width: 1150px)
+  .container
+    max-width: 720px
+  .header
+    .telephone
+      display: none
+    .menu
+      &-list
+        &__item
+          &::before
+            bottom: 3px
+          &:hover::before
+            transform-origin: center
+
 
