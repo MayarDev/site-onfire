@@ -4,7 +4,7 @@
   padding: 0
   box-sizing: border-box
 .container
-  width: 1110px
+  max-width: 1110px
   margin: 0 auto
 body
   font-family: "Ubuntu", sans-serif
@@ -36,8 +36,6 @@ img
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25)
   border: none
   border-radius: 30px;
-
-// Settings
 
 //HEADER
 .header
@@ -78,7 +76,7 @@ img
 //PROMO
 .promo
   padding: 228px 0 70px 0
-  background: linear-gradient(57.79deg, rgba(51, 5, 111, 0.58) 27.19%, rgba(56, 32, 87, 0.29) 81.02%), url(../img/header_bg.jpg);
+  background: linear-gradient(57.79deg, rgba(51, 5, 111, 0.58) 27.19%, rgba(56, 32, 87, 0.29) 81.02%), url("../img/header_bg.jpg") no-repeat top / cover
   &-title
     font-size: 48px
     color: #fff
@@ -197,11 +195,11 @@ img
   position: relative
   text-align: center
   .container
-    width: 830px
+    max-width: 830px
   .form-rules
     position: absolute
     top: -124px
-    width: 801px
+    max-width: 801px
     background: #F4EAFF
     border-radius: 15px
     padding: 52px 88px
@@ -303,5 +301,4 @@ img
         outline: none
         cursor: pointer
         border: none
-        
-        
+
