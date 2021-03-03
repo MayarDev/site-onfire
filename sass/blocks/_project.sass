@@ -1,51 +1,67 @@
 .project
   padding: 109px 0 205px 0
   background: #F7F6F8;
-  .title
+  &__title
     font-size: 36px
     line-height: 50.4px
     margin-bottom: 17px
-  .descr
+  &__descr
     line-height: 22.4px
     margin-bottom: 78px
-  .wrapper
-    display: flex
-    justify-content: space-between
-    margin-bottom: 89px
-    &__item
-      width: 345px
-      height: 265px
-      position: relative
-      &__img
-        border-radius: 15px
-        position: absolute
-        z-index: 1
-      &__icon
-        position: absolute
-        z-index: 5
-        left: 50%
-        transform: translateX(-50%)
-        top: 45%
-        display: none
-      &:hover .wrapper__item__icon
-        display: block
-  .line
+  &__line
     width: 100%
     border: 1px solid #B8B8B8
     margin-bottom: 50px
-  .chart
-    
+  .wrapper
+    margin-bottom: 89px
+
+.chart
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__item
+    text-align: center
     display: flex
-    justify-content: space-between
-    align-items: center
-    &__item
-      text-align: center
-      display: flex
-      height: 70px
-      flex-wrap: wrap
-      flex-direction: column
-      justify-content: space-evenly
-      &__count
-        line-height: 50.4px
-        font-size: 36px
-        font-weight: 700 
+    height: 70px
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: space-evenly
+  &__count
+    line-height: 50.4px
+    font-size: 36px
+    font-weight: 700 
+
+.wrapper
+  display: flex
+  justify-content: space-between
+  &__img
+    border-radius: 15px
+  &__item
+    width: 345px
+    height: 265px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(0,0,0,.5)
+      opacity: 0
+      z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: url("../img/search-icon.svg") center center no-repeat
+      opacity: 0
+      z-index: 2
+    &:hover:after, &:hover:before
+      opacity: 1
+  
+
+
